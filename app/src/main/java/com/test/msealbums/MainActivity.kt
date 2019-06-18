@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onFailure(call: Call<List<Album>>, throwable: Throwable) {
-                Toast.makeText(this@MainActivity, "Unable to load users", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@MainActivity, "Unable to load Albums", Toast.LENGTH_SHORT).show()
             }
         })
     }
