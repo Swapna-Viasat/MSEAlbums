@@ -37,6 +37,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun loadDataList(usersList: List<Album>?) {
+
         Collections.sort(usersList) { o1, o2 -> o1.album!!.compareTo(o2.album!!) }
 
         myRecyclerView = findViewById(R.id.rv_album)
